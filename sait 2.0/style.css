@@ -1,0 +1,303 @@
+.body{
+	
+	background-size: 100%;
+	margin: 0;
+	background: url("img/aa.jpg") no-repeat;
+	-moz-background-size: 100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+}
+.page {
+	
+	width: 70%;
+	margin: auto;
+	margin-bottom: 3%;
+}
+.nav{
+	z-index: 1;
+	position: sticky;
+	top: 0;
+	padding: 1.3%;
+	padding-bottom: 4.5%;
+	padding-top: 2.2%;
+    background-color:rgba(0, 0, 0, 0.885);
+}
+.button1{
+	
+	display: inline-block;
+	margin: 0 1%;
+	background-color: rgba(0, 0, 0, 0.885);
+	float: right;
+
+	border: 0.1px solid #fff;
+}
+.button1:hover{
+	/*color: rgb(242, 231, 209);*/
+	border-color: rgb(242, 231, 209);
+	box-shadow: 3px 3px 8px rgb(242, 231, 209);;
+}
+.head{
+	box-shadow: 2px 15px 20px #000;
+	margin: auto;
+	
+	background-color: rgba(0, 0, 0, 0.88);
+}
+.header-title{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: 18px;
+	margin-top: 3%;
+	padding:3px;
+	background-color: #efefce;
+	box-shadow: 6px 6px 10px #000;
+	background-image: linear-gradient(45deg, rgba(70, 70, 70, 0.88)  0%,
+	 rgba(237, 237, 228, 0.789)  50%, rgba(77, 77, 77, 0.88)  100%);
+}
+main {
+	padding: 0;
+	padding-left: 0%;
+	margin-top: 2%;
+	width: 65%;
+	
+	box-shadow: 6px 6px 10px #000;
+}
+
+.content {
+	
+	width: 100%;
+	margin: auto;
+}
+
+.menu-button {
+   line-height: 1.5%;
+    margin: 0%;
+    display: block;
+    padding: 8px;
+    padding-right: 2%;
+    width: 100%;
+    padding-left: 3%;
+
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+
+    border: solid 1px #000;
+    background-color: #a29f5c;
+	 background-image: linear-gradient(45deg, rgba(228, 228, 216, 0.789)  0%, rgba(63, 52, 10, 0.88)   100%);
+}
+.menu-button:hover{
+color: #fce38a;
+}
+
+
+.slide{
+	position: relative;
+}
+.slide{
+	box-shadow: 4px 14px 18px #000;
+	display: block;
+	float:right;
+	margin-top: 4%;
+}
+.footer {
+	margin-top: 3%;
+	color: #fff;
+	padding:1% 2%;
+	padding-bottom: 2%;
+	background-color: rgba(0, 0, 0, 0.885);
+}
+.inform{
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+.inform2{
+	font-family: "Arial";
+	font-size: 16px;
+}
+.t{
+	display: inline-block;
+	margin: 0 0.3%;
+	text-decoration: none;
+	color: #fff;
+}
+
+/*Обратная связь*/
+@keyframes phone-rotate {
+	0%{
+		transform: rotate(-15deg) scale(1);
+	}
+	100%{
+		transform: rotate(-45deg) scale(1.2);
+	}
+}
+
+.btn-phone-wrap{
+	position: relative;
+}
+.btn-phone{
+	margin-left: 3%;
+	margin-top: -1.5%;
+	float: left;
+	width: 6%;
+	animation: phone-rotate  1.5s infinite alternate linear;
+
+}
+
+/*адаптация*/
+
+@media (min-width: 2000px) {
+	.page {
+	
+	margin: auto;
+}
+	.menu-button {
+		font-size: 30px;
+		width: 100%;
+	}
+	.header-title{
+		font-size: 30px;
+	}
+	.inform2{
+		font-size: 22px;
+	}
+	.inform{
+		font-size: 30px;
+	}
+
+}
+
+@media (min-width: 3000px) {
+	.page {
+	
+	margin: auto;
+}
+	.menu-button {
+		font-size: 45px;
+		width: 100%;
+	}
+	.header-title{
+		font-size: 45px;
+	}
+	.inform2{
+		font-size: 37px;
+	}
+	.inform{
+		font-size: 45px;
+	}
+	.slide{
+		margin-top: 2.5%;
+	}
+
+}
+
+@media (min-width: 4000px) {
+	.page {
+	
+	margin: auto;
+}
+	.menu-button {
+		padding: 20px;
+		font-size: 58px;
+		width: 100%;
+	}
+	.header-title{
+		font-size: 58px;
+	}
+	.inform2{
+		font-size: 50px;
+	}
+	.inform{
+		font-size: 58px;
+	}
+}
+
+
+@media (max-width: 800px) {
+	.page {
+	width: 90%;
+	margin: auto;
+}
+	.menu-button {
+		width: 100%;
+	}
+	main {
+	padding: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.page {
+	width: 90%;
+	margin: auto;
+}
+	.menu-button {
+		width: 100%;
+	}
+	main {
+		box-shadow: 0;
+		width: 95%;
+	padding: 0;
+	}
+	.menu-button {
+		font-size: 12px;
+		width: 100%;
+	}
+	.header-title{
+		font-size: 12px;
+	}
+	.inform2{
+		font-size: 8px;
+	}
+	.inform{
+		font-size: 12px;
+	}
+	.slide{
+		margin-top: 5.9%;
+		margin-right: -0%;
+		border: 1px solid #000;
+		box-shadow: 0px 0px 0px #000;
+		margin-bottom: -70%;
+		width: 40%;
+	}
+}
+@media (max-width: 500px) {
+	.slide{
+		margin-top: 6.5%;
+		margin-right: -0.2%;
+	}
+}
+@media (max-width: 400px) {
+	
+	.menu-button {
+		width: 100%;
+	}
+	main {
+	padding: 0;
+	}
+	.menu-button {
+		font-size: 9px;
+		width: 100%;
+	}
+	.header-title{
+		font-size: 9px;
+	}
+	.inform2{
+		font-size: 5px;
+	}
+	.inform{
+		font-size: 9px;
+	}
+	.slide{
+		margin-right: -0.3%;
+		margin-top: 8.1%;
+	}
+}
+
+@media (max-width: 300px){
+	.slide{
+		width: 32%;
+		margin-right: -0.5%;
+		margin-top: 9.5%;
+	}
+}
